@@ -18,9 +18,9 @@ const play = () => {
   noOfGuesses += 1;
   if (userGuess != answer) {
     if (userGuess < answer) {
-      hint.innerHTML = "Too low. Try Again!";
+      hint.innerHTML = "Your number is too Small. Try Again!";
     } else {
-      hint.innerHTML = "Too high. Try Again!";
+      hint.innerHTML = "Your number is too Big. Try Again!";
     }
     noOfGuessesRef.innerHTML = `<span>No. Of Guesses:</span> ${noOfGuesses}`;
     guessedNumsRef.innerHTML = `<span>Guessed Numbers are: </span>${guessedNumsArr.join(
